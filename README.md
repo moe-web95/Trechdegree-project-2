@@ -1,2 +1,1 @@
-Techdergee project 2
- my-project-2
+Techdergee project- 2
