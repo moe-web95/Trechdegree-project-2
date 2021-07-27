@@ -1,12 +1,18 @@
+
 /*Base Type selector*/
 *{
     box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+html,body{
+    height:100vh;
 }
 body{
     background:#faebd7;
     text-align: center;
     font-family: 'Work Sans', sans-serif;
-    margin:0 auto;
+    /*margin:0 auto;*/
     max-width: 1024px;
 }
 body p{
@@ -25,7 +31,10 @@ ul {
  nav {
    font-weight:400;
    letter-spacing: .05em;
-    padding:25px;
+   padding:25px;
+ }
+ h1{
+     padding:25px;
  }
  h1,.main-nav {
    text-align: center;
@@ -38,12 +47,12 @@ ul {
      margin-top: 5px;
      padding-bottom: 10px;
  }
- h6{
-     font-size:1em;
-     font-weight:bold;
-     margin-bottom: 10px;
+  h6{
+     padding: 10px;
+     font-size: 1em;
+     font-weight: bold;
+     margin-bottom: 0;
  }
-
 
 
 /*CLASS Selector*/
@@ -51,9 +60,11 @@ ul {
     width: 300px;
     border-radius:.4em;
 }
+
   .main-nav li{
     padding:10px 0;
     margin: 5px 0;
+    background-color: #fff;
   }
   .main-nav, .main-nav li{
     width:100%;
@@ -61,6 +72,27 @@ ul {
   .main-nav{
     margin-top: 30px;
   }
+
+
+  .last-footer{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    padding:0 20px;
+    height:100px;
+    background: coral;
+}
+.last-footer a{
+    text-transform: uppercase;
+}
+.last-footer h2{
+    margin:0;
+    padding:0;
+}
+.full{
+    display: none;
+}
 
 
 
@@ -80,18 +112,21 @@ ul {
         display:flex;
         justify-content: center;
     }
-    .main-nav li{
-        display: inline-flex;
-        width:auto;
-        margin-right: 15px;
 
-    }
+
     .main-nav{
       margin-top:0;
     }
-    .main-nav li:last-child{
+    .main-nav li{
+        display: inline-block;
+        width:auto;
+        margin-right: 15px;
+        background-color: transparent;
+      }
+      .main-nav li:last-child{
       margin-right: 0;
     }
+
 
     .pro-picture{
         width:300px;
@@ -104,11 +139,19 @@ ul {
        margin-top: 0;
     }
 
-
     .main-container{
         display:flex;
         flex-wrap: wrap;
         justify-content: space-around;
+    }
+
+    .top{
+        display:none;
+    }
+    .full{
+        display: inline-block;
+        margin-left: 15px;
+
     }
 
 }
@@ -120,10 +163,8 @@ ul {
         align-items: center;
         flex-direction: row;
       }
-      .main-nav li{
+      .main-nav, .main-nav li{
+        width:initial;
         margin-bottom: 0;
       }
-
-
-
 }
