@@ -185,6 +185,7 @@ display: none;
       justify-content:space-between;
       align-items: center;
       flex-direction: row;
+    }
 
     .main-nav, .main-nav li{
       width:initial;
