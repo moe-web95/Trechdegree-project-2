@@ -79,9 +79,8 @@ h6{
 .pro-picture{
 max-width: 100%;
 width:300px;
-margin: 10px;
+margin:15px;
 order:1;
-
 }
 .image, .pro-picture{
   padding:0 3px;
@@ -156,7 +155,7 @@ display: none;
     margin-right: 0;
   }
   .top-page p{
-     width:50% ;
+     width:65% ;
      text-align:start;
      margin: 0;
   }
@@ -183,7 +182,7 @@ display: none;
 @media (min-width: 1024px){
     header{
       display:flex;
-      justify-content: space-around;
+      justify-content:space-between;
       align-items: center;
       flex-direction: row;
 
@@ -191,7 +190,5 @@ display: none;
       width:initial;
       margin-bottom: 0;
     }
-    h1{
-      text-align:start;
-    }
+
 }
