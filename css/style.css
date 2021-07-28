@@ -1,9 +1,13 @@
 
-/*Base Type selector*/
+
+/*----------------------------
+------------Base Type selector*-------------
+--------------------------------*/
 *{
     box-sizing: border-box;
     margin:0;
     padding:0;
+    font-family: 'Work Sans', sans-serif;
 }
 html,body{
     height:100vh;
@@ -11,7 +15,7 @@ html,body{
 body{
     background:#faebd7;
     /*text-align: center;*/
-    font-family: 'Work Sans', sans-serif;
+
     /*margin:0 auto;*/
     max-width: 1024px;
 }
@@ -27,7 +31,10 @@ ul {
   a{
     text-transform: uppercase;
     text-decoration:none;
-     color:black;
+    color:black;
+ }
+ a:hover{
+   color:blue;
  }
  nav {
    font-weight:400;
@@ -46,6 +53,7 @@ ul {
 
  h2{
      margin-top: 5px;
+     padding-top:5px;
      padding-bottom: 10px;
      text-align: center;
  }
@@ -58,13 +66,25 @@ ul {
  }
 
 
-/*CLASS Selector*/
+/*-------------------------------
+------------CLASS Selector------------
+-------------------------------*/
 .image{
+    max-width: 100%;
     width:300px;
     border-radius:.4em;
 }
+.pro-picture{
+  max-width: 100%;
+  width:300px;
+  order:1;
 
-  .main-nav li{
+}
+.image, .pro-picture{
+    padding:0 3px;
+    margin:0 2px 0 4px;
+}
+.main-nav li{
     padding:10px 0;
     margin: 5px 0;
     background-color: #fff;
@@ -75,10 +95,7 @@ ul {
   .main-nav{
     margin-top: 30px;
   }
-  .pro-picture{
-    max-width: 100%;
-    order:1;
-  }
+
 
 .last-footer{
     display:flex;
@@ -99,15 +116,20 @@ ul {
 }
 
 
-/* ID Selector*/
+
+/*------------------------------
+------------ ID Selector----------
+--------------------------------*/
 #main-box{
+    width:100%
     padding-top:5px;
     margin-top: 15px;
     background-color: burlywood;
 }
 
 
-/*@media queries*/
+/*-------------------------
+-------@media queries-------*/
 @media  (min-width:768px){
 
   .top-page,
@@ -129,18 +151,12 @@ ul {
       .main-nav li:last-child{
       margin-right: 0;
     }
-
-
-
-
     .top-page p{
       flex-basis:70% ;
        align-items:flex-start;
        margin-bottom: auto;
        margin-top: 0;
     }
-
-
     .main-container{
         display:flex;
         flex-wrap: wrap;
@@ -150,14 +166,17 @@ ul {
     .top{
         display:none;
     }
-    .full{
+   .full{
         display: inline-block;
         margin-left: 15px;
 
     }
+
 }
 
-    @media (min-width: 1024px){
+/*-------------------------
+-------@media queries-------*/
+@media (min-width: 1024px){
       header{
         display:flex;
         justify-content: space-between;
