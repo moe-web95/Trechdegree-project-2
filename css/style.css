@@ -78,8 +78,6 @@ h6{
 }
 .pro-picture{
 max-width: 100%;
-width:300px;
-margin:15px;
 order:1;
 }
 .image, .pro-picture{
@@ -193,4 +191,5 @@ display: none;
     }
 
 }
-  
+
+   
