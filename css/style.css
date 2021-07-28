@@ -132,7 +132,7 @@ ul {
 
 
 
-    }
+
     .top-page p{
       flex-basis:70% ;
        align-items:flex-start;
@@ -155,7 +155,6 @@ ul {
         margin-left: 15px;
 
     }
-
 }
 
     @media (min-width: 1024px){
